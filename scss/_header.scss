@@ -1,0 +1,48 @@
+/* Yuki Matsubara Morning Class Week4 assignment */
+@import "./colors";
+
+@mixin flexdirection($direction) {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: $direction;
+  align-items: center;  
+}
+/* Header */
+header {
+  @include flexdirection(row);
+  position: relative;
+  .title {
+    @include flexdirection(row);
+    h1 {
+      text-transform: uppercase;
+    }
+    img {
+      width: 2vw;
+      height: 10vh;
+      margin: 2em;
+    }
+  }  
+  form .box {
+    width: 20vw;
+  }
+  .login a, .signup a {
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+}
+/* Side Bar */
+.sideBar ul li{
+  list-style: none;
+  a {
+    text-decoration: none;
+  }
+}
+/* Color control */
+.fas {
+  color: $accent2;
+}
+a {
+  color: $font-color;
+}
+
+
