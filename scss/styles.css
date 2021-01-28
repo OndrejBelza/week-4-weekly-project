@@ -1,5 +1,36 @@
+footer {
+  background-color: #22272b;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+footer .logo {
+  font-size: 5rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
 * {
   padding: 0;
   margin: 0;
+}
+
+body {
+  background-color: #06070d;
+  color: #f2f2f2;
 }
 /*# sourceMappingURL=styles.css.map */
