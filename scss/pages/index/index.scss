@@ -1,3 +1,14 @@
+@import "../../colors";
+
 img {
   width: 100%;
+}
+
+.section-title {
+  background-color: $secondary-color;
+}
+
+.sample-image {
+  height: 15vh;
+  overflow: hidden;
 }

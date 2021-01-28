@@ -1,4 +1,13 @@
 img {
   width: 100%;
 }
+
+.section-title {
+  background-color: #22272b;
+}
+
+.sample-image {
+  height: 15vh;
+  overflow: hidden;
+}
 /*# sourceMappingURL=index.css.map */
