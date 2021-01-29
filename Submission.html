@@ -1,0 +1,88 @@
+<!--Yuki Matsubara Morning class Week4 Assignment-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>See Photo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+        crossorigin="anonymous"
+      />
+    <script src="https://kit.fontawesome.com/a62f436beb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="scss/styles.css" />
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <div class="title">
+        <i class="fas fa-bars fa-2x"></i>
+        <img src="assets/images/czech.JPG" alt="czech">
+        <h1>Photo Gallery</h1>
+        <img src="assets/images/japan.JPG" alt="japan">
+      </div>
+      <form>
+        <i class="fas fa-search fa-2x"></i>
+        <input class="box" type="search" name="search" placeholder="Photos, People or Groups">
+      </form>
+      <div class="login">
+        <i class="fas fa-sign-in-alt fa-2x"></i>
+        <a href="#">Login</a>
+      </div>
+      <div class="signup">
+        <i class="far fa-user fa-2x"></i>
+        <a href="#">Sign up</a>
+      </div>
+    </header>
+    <!--Main section-->
+    <div class="container">
+      <main>
+        <div class="loginUser">
+          <img src="./assets/images/profile2.JPG" alt="loginUser">
+          <p>J.T. Miller</p>
+        </div>
+        <h1>Edit Your Post</h1>
+        <div class="post">
+          <!-- <div class="editImage"> -->
+          <img src="./assets/images/Photo3.jpg"alt="photo">
+          <i class="fas fa-edit fa-1x">Edit Photo</i>
+          <!-- </div> -->
+          <form>
+            <input class="text" type="textarea" name="editcaption" placeholder="Write caption here...">
+          </form>
+        </div>
+        <form>
+          <input class="postButton" type="submit" name="post" value="Post Now">
+        </form>       
+      </main>
+    </div>
+      <!--footer-->
+  <footer>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-3 d-flex justify-content-center align-items-center">
+        <i class="fas fa-low-vision logo"></i>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center align-items-center">
+        <ul class="text-center">
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Legal notice</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center align-items-center">
+        <ul class="text-center">
+          <li><a href="#">Sign up</a></li>
+          <li><a href="#">Log in</a></li>
+          <li><a href="#">Carers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center"><p>© Made by Yuki and Ondra</p></div>
+    </div>
+  </footer>
+  </body>
+
+</html>
