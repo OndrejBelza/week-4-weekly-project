@@ -12,45 +12,73 @@
     />
   <script src="https://kit.fontawesome.com/a62f436beb.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="scss/styles.css" />
+  <link rel="stylesheet" type="text/css" href="/scss/pages/seePage/_seePage.scss" />
 </head>
 <body>
   <!--header-->
   <header>
-    <div class="title">
-      <i class="fas fa-bars fa-2x"></i>
-      <img src="assets/images/czech.JPG" alt="czech">
-      <h1>Photo Gallery</h1>
-      <img src="assets/images/japan.JPG" alt="japan">
-    </div>
-    <form>
-      <i class="fas fa-search fa-2x"></i>
-      <input class="box" type="search" name="search" placeholder="Photos, People or Groups">
-    </form>
-    <div class="login">
-      <i class="fas fa-sign-in-alt fa-2x"></i>
-      <a href="#">Login</a>
-    </div>
-    <div class="signup">
-      <i class="far fa-user fa-2x"></i>
-      <a href="#">Sign up</a>
+    <div class="container-fluid">
+      <div class="row pt-1">
+        <div class="col-2 col-md-2 col-xl-1">
+          <i class="fas fa-bars fa-2x menu-button"></i>
+        </div>
+        <div class="col-10 col-md-10 col-xl-5 text-with-flags">
+          <img
+            src="assets/images/czech.JPG"
+            alt="czech"
+            class="country-flag"
+          /><a href="index.html" class="page-name">Photo Gallery</a
+          ><img
+            src="assets/images/japan.JPG"
+            alt="japan"
+            class="country-flag"
+          />
+        </div>
+
+        <div class="col-6 col-md-6 col-xl-3">
+          <form><div class="container-fluid">
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-search fa-2x"></i>
+              </div>
+              <div class="col-10">
+                <input
+                  class="box"
+                  type="search"
+                  name="search"
+                  placeholder="Photos, People or Groups"
+                />
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+
+        <div class="col-6 col-md-6 col-xl-3 d-flex justify-content-evenly ">
+          <div class="submitPhoto">
+            <i class="fas fa-camera fa-2x"></i>
+            <a href="Submission.html" target="blank">Post</a>
+          </div>
+          <div class="login">
+            <i class="fas fa-sign-in-alt fa-2x"></i>
+            <a href="#">Login</a>
+          </div>
+          <div class="signup">
+            <i class="far fa-user fa-2x"></i>
+            <a href="#">Sign up</a>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
-  <!--Side menu-->
-  <!-- <nav class="sideBar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Explore</a></li>
-      <li><a href="#">Trending</a></li>
-      <li><a href="#">Prints</a></li>
-    </ul>
-  </nav> -->
   <div class="container">
   <!--Main section-->
   <main>
     <!--Display Image-->
     <section class="Image">
       <img src="assets/images/Photo1.jpg" alt="topimage">
-      <p>←Back to Gallery</p>
+      <a href="./index.html">←Back to Gallery</a>
       <i class="fas fa-expand-alt fa-3x"></i>
       <div class="action">
         <i class="fas fa-heart fa-3x"></i>
@@ -83,7 +111,7 @@
         </div>
         <div class="comment1">
           <p class="username">Taylor Swift</p>
-          <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet?</p>
+          <p class="com">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet?</p>
         </div>
       </div>
       <div class="userComments2">
@@ -92,7 +120,7 @@
         </div>
         <div class="comment2">
           <p class="username">Taylor Swift</p>
-          <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet?</p>
+          <p class="com">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet?</p>
         </div>
       </div>
       <div class="userComments3">
@@ -101,25 +129,25 @@
         </div>
         <div class="comment3">
           <p class="username">Taylor Swift</p>
-          <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet?</p>
+          <p class="com">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet?</p>
         </div>
       </div>
       <!--You may also like-->
       <div class="recommend">
         <div>
-          <img src="assets/images/Photo2.JPG" alt="photo2">
-          <img src="assets/images/Photo2.JPG" alt="photo2">
-          <img src="assets/images/Photo2.JPG" alt="photo2">
+          <img src="assets/images/Photo2.JPG" alt="photo1">
+          <img src="assets/images/Photo4.JPG" alt="photo2">
+          <img src="assets/images/sample-image-4.jpg" alt="photo3">
         </div>
         <div>
-          <img src="assets/images/Photo2.JPG" alt="photo2">
-          <img src="assets/images/Photo2.JPG" alt="photo2">
-          <img src="assets/images/Photo2.JPG" alt="photo2">
+          <img src="assets/images/sample-image-3.jpg" alt="photo4">
+          <img src="assets/images/sample-image-6.jpg" alt="photo5">
+          <img src="assets/images/sample-image-7.jpg" alt="photo6">
         </div>
         <div>
-          <img src="assets/images/Photo2.JPG" alt="photo2">
-          <img src="assets/images/Photo2.JPG" alt="photo2">
-          <img src="assets/images/Photo2.JPG" alt="photo2">
+          <img src="assets/images/sample-image-8.jpg" alt="photo7">
+          <img src="assets/images/sample-image.jpg" alt="photo8">
+          <img src="assets/images/Photo5.jpg" alt="photo9">
         </div>
       </div>
     </section>  

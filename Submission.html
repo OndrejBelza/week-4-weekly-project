@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>See Photo</title>
+    <title>Post Photo</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
@@ -13,49 +13,89 @@
       />
     <script src="https://kit.fontawesome.com/a62f436beb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="scss/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/scss/pages/submission/_submission.scss">
   </head>
   <body>
     <!--header-->
     <header>
-      <div class="title">
-        <i class="fas fa-bars fa-2x"></i>
-        <img src="assets/images/czech.JPG" alt="czech">
-        <h1>Photo Gallery</h1>
-        <img src="assets/images/japan.JPG" alt="japan">
-      </div>
-      <form>
-        <i class="fas fa-search fa-2x"></i>
-        <input class="box" type="search" name="search" placeholder="Photos, People or Groups">
-      </form>
-      <div class="login">
-        <i class="fas fa-sign-in-alt fa-2x"></i>
-        <a href="#">Login</a>
-      </div>
-      <div class="signup">
-        <i class="far fa-user fa-2x"></i>
-        <a href="#">Sign up</a>
+      <div class="container-fluid">
+        <div class="row pt-1">
+          <div class="col-2 col-md-2 col-xl-1">
+            <i class="fas fa-bars fa-2x menu-button"></i>
+          </div>
+          <div class="col-10 col-md-10 col-xl-5 text-with-flags">
+            <img
+              src="assets/images/czech.JPG"
+              alt="czech"
+              class="country-flag"
+            /><a href="index.html" class="page-name">Photo Gallery</a
+            ><img
+              src="assets/images/japan.JPG"
+              alt="japan"
+              class="country-flag"
+            />
+          </div>
+  
+          <div class="col-6 col-md-6 col-xl-3">
+            <form><div class="container-fluid">
+              <div class="row">
+                <div class="col-2">
+                  <i class="fas fa-search fa-2x"></i>
+                </div>
+                <div class="col-10">
+                  <input
+                    class="box"
+                    type="search"
+                    name="search"
+                    placeholder="Photos, People or Groups"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+  
+          <div class="col-6 col-md-6 col-xl-3 d-flex justify-content-evenly ">
+            <div class="submitPhoto">
+              <i class="fas fa-camera fa-2x"></i>
+              <a href="Submission.html" target="black">Post</a>
+            </div>
+            <div class="login">
+              <i class="fas fa-sign-in-alt fa-2x"></i>
+              <a href="#">Login</a>
+            </div>
+            <div class="signup">
+              <i class="far fa-user fa-2x"></i>
+              <a href="#">Sign up</a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <!--Main section-->
     <div class="container">
       <main>
-        <div class="loginUser">
+        <p>Currently loggin in as...</p>
+        <div class="loginUser">          
           <img src="./assets/images/profile2.JPG" alt="loginUser">
           <p>J.T. Miller</p>
+          <a href="#"><i class="fas fa-cloud-upload-alt fa-2x"></i> Select Photo</a>
         </div>
         <h1>Edit Your Post</h1>
         <div class="post">
           <!-- <div class="editImage"> -->
-          <img src="./assets/images/Photo3.jpg"alt="photo">
           <i class="fas fa-edit fa-1x">Edit Photo</i>
-          <!-- </div> -->
-          <form>
-            <input class="text" type="textarea" name="editcaption" placeholder="Write caption here...">
-          </form>
-        </div>
-        <form>
-          <input class="postButton" type="submit" name="post" value="Post Now">
-        </form>       
+          <div class="editPhoto">
+            <img src="./assets/images/Photo3.jpg"alt="photo">
+            <form>
+              <input class="text" type="textarea" name="editcaption" placeholder="  Write caption here...">
+            </form> 
+          </div>
+          <form action="submissionCompleted.html" method="get">
+            <input class="postButton" type="submit" name="post" value="Post Now">
+          </form>   
+        </div>    
       </main>
     </div>
       <!--footer-->

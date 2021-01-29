@@ -1,9 +1,8 @@
 @import "./colors";
 @import "./footer";
 @import "./header";
-@import "./pages/seePage/seePage";
-@import "./pages/submission/submission";
-
+@import "../scss/pages/seePage/seePage";
+@import "../scss/pages/submission/submission";
 
 * {
   padding: 0;
