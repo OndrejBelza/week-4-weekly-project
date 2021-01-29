@@ -12,36 +12,140 @@
     />
   <script src="https://kit.fontawesome.com/a62f436beb.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="scss/styles.css" />
-  <link rel="stylesheet" type="text/css"  href="scss/pages/index/index.css" />
 </head>
 <body>
-  <header>
-    <div class="title">
-      <i class="fas fa-bars fa-2x"></i>
-      <img src="assets/images/czech.JPG" alt="czech">
-      <h1>Photo Gallery</h1>
-      <img src="assets/images/japan.JPG" alt="japan">
+    <header>
+      <div class="title">
+        <i class="fas fa-bars fa-2x"></i>
+        <img src="assets/images/czech.JPG" alt="czech">
+        <h1>Photo Gallery</h1>
+        <img src="assets/images/japan.JPG" alt="japan">
+      </div>
+      <form>
+        <i class="fas fa-search fa-2x"></i>
+        <input class="box" type="search" name="search" placeholder="Photos, People or Groups">
+      </form>
+      <div class="login">
+        <i class="fas fa-sign-in-alt fa-2x"></i>
+        <a href="#">Login</a>
+      </div>
+      <div class="signup">
+        <i class="far fa-user fa-2x"></i>
+        <a href="#">Sign up</a>
+      </div>
+    </header>
+    <!--Side menu-->
+    <!-- <nav class="sideBar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Prints</a></li>
+      </ul>
+    </nav> -->
+    <div class="container">
+    <!--Main section-->
+    <main>
+      <!--Display Image-->
+      <section class="Image">
+        <img src="assets/images/Photo1.jpg" alt="topimage">
+        <p>←Back to Gallery</p>
+        <i class="fas fa-expand-alt fa-3x"></i>
+        <div class="action">
+          <i class="fas fa-heart fa-3x"></i>
+          <i class="fas fa-share-square fa-3x"></i>
+          <i class="fas fa-download fa-3x"></i>
+        </div>
+      </section>
+      <!--Profile-->
+      <section class="Profile">
+        <div class="profpic">
+          <img src="assets/images/profile.JPG" alt="profile">
+        </div>
+        <div class="introduction">
+          <p class="name">Julia Roberts</p>
+          <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet?</p>
+        </div>        
+        <div class="views">
+          <p><span>75,000</span><br>Views</p>
+          <p><span>300</span><br>Faves</p>
+          <p><span>200</span><br>Comments</p>
+        </div>        
+      </section>
+      <!--Comments-->
+      <section class="Comments">
+        <h2>View Comments</h2>
+        <h3>You may also like</h3>
+        <div class="userComments1">
+          <div class="user1">
+            <img src="assets/images/user.JPG" alt="user">
+          </div>
+          <div class="comment1">
+            <p class="username">Taylor Swift</p>
+            <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet?</p>
+          </div>
+        </div>
+        <div class="userComments2">
+          <div class="user2">
+            <img src="assets/images/user.JPG" alt="user">
+          </div>
+          <div class="comment2">
+            <p class="username">Taylor Swift</p>
+            <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet?</p>
+          </div>
+        </div>
+        <div class="userComments3">
+          <div class="user3">
+            <img src="assets/images/user.JPG" alt="user">
+          </div>
+          <div class="comment3">
+            <p class="username">Taylor Swift</p>
+            <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eligendi illum impedit eveniet magnam nisi, similique corrupti! Nemo expedita, doloremque, ab odit repellat accusantium cumque, minima sit quod architecto amet?</p>
+          </div>
+        </div>
+        <!--You may also like-->
+        <div class="recommend">
+          <div>
+            <img src="assets/images/Photo2.JPG" alt="photo2">
+            <img src="assets/images/Photo2.JPG" alt="photo2">
+            <img src="assets/images/Photo2.JPG" alt="photo2">
+          </div>
+          <div>
+            <img src="assets/images/Photo2.JPG" alt="photo2">
+            <img src="assets/images/Photo2.JPG" alt="photo2">
+            <img src="assets/images/Photo2.JPG" alt="photo2">
+          </div>
+          <div>
+            <img src="assets/images/Photo2.JPG" alt="photo2">
+            <img src="assets/images/Photo2.JPG" alt="photo2">
+            <img src="assets/images/Photo2.JPG" alt="photo2">
+          </div>
+        </div>
+      </section>  
+    </main>
+  </div>
+  <footer>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-3 d-flex justify-content-center align-items-center">
+        <i class="fas fa-low-vision logo"></i>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center align-items-center">
+        <ul class="text-center">
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Legal notice</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center align-items-center">
+        <ul class="text-center">
+          <li><a href="#">Sign up</a></li>
+          <li><a href="#">Log in</a></li>
+          <li><a href="#">Carers</a></li>
+        </ul>
+      </div>
     </div>
-    <form>
-      <a href="#"><i class="fas fa-search fa-2x"></i></a>
-      <input class="box" type="search" name="search" placeholder="Photos, People or Groups">
-    </form>
-    <div class="login">
-      <i class="fas fa-sign-in-alt fa-2x"></i>
-      <a href="#">Login</a>
+    <div class="row">
+      <div class="col-md-12 text-center"><p>© Made by Yuki and Ondra</p></div>
     </div>
-    <div class="signup">
-      <i class="far fa-user fa-2x"></i>
-      <a href="#">Sign up</a>
-    </div>
-  </header>
-  <!--Side menu-->
-  <nav class="sideBar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Explore</a></li>
-      <li><a href="#">Trending</a></li>
-      <li><a href="#">Prints</a></li>
-    </ul>
-  </nav>
+  </footer>
 </body>
