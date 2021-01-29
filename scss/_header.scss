@@ -19,13 +19,18 @@ header {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
+    text-decoration: none;
+    color: $font-color;
   }
 
+  .page-name:hover {
+    color: $font-color2;
+  }
   .text-with-flags {
     text-align: center;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1024px) {
     .text-with-flags {
       text-align: left !important;
     }

@@ -1,10 +1,14 @@
 $background-color: #06070d;
 $secondary-color: #282e33;
 $secondary-gradient-color: #b8babd;
-$accent1:orange ;
-$accent2:teal ;
+$accent1: orange;
+$accent2: teal;
 $font-color: #f2f2f2;
-$font-color2:rgb(179, 49, 92);
-$font-color3:rgb(99, 178, 204);
-$font-color4:rgb(231, 173, 66);
-$gradient: linear-gradient(to bottom, $secondary-color 0%, $secondary-gradient-color 100%);
+$font-color2: rgb(179, 49, 92);
+$font-color3: rgb(18, 121, 155);
+$font-color4: rgb(231, 146, 66);
+$gradient: linear-gradient(
+  to bottom,
+  $secondary-color 0%,
+  $secondary-gradient-color 100%
+);
