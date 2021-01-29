@@ -1,13 +1,84 @@
 img {
   width: 100%;
+  height: auto;
 }
 
 .section-title {
   background-color: #22272b;
 }
 
-.sample-image {
-  height: 15vh;
+.explore-text {
+  font-size: 1.5rem;
+}
+
+.sample-image-box .sample-image {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
+}
+
+.sample-image-box .sample-image .fas {
+  color: teal;
+}
+
+.sample-image-box .sample-image img {
+  height: 15rem;
+  width: auto;
+}
+
+.sample-image-box .stats {
+  text-align: center;
+  color: #f2f2f2;
+}
+
+.sample-image-box .stats span {
+  margin-left: 1rem;
+}
+
+.image-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.section-art {
+  background-image: url("/assets/images/sample-image.jpg");
+}
+
+.section-hockey {
+  background-image: url("/assets/images/hockey-section.jpg");
+}
+
+.section-nature {
+  background-image: url("/assets/images/nature-section.jpg");
+}
+
+.section-cars {
+  background-image: url("/assets/images/cars-section.jpg");
+  background-position: bottom;
 }
 /*# sourceMappingURL=index.css.map */

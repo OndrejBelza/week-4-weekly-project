@@ -2,13 +2,12 @@
 
 footer {
   background-color: $secondary-color;
-  position: sticky;
-  bottom: 0;
   margin-top: 1rem;
   padding: 1rem;
 
   .logo {
     font-size: 5rem;
+    margin-left: 3rem;
   }
 
   ul {
