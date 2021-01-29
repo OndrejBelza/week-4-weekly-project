@@ -1,56 +1,64 @@
 /* Yuki Matsubara Morning Class Week4 assignment */
 @import "./colors";
 
-@mixin flexdirection($direction) {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: $direction;
-  align-items: center;  
-}
 /* Header */
 header {
-  @include flexdirection(row);
-  width: 100vw;
-  .title {
-    @include flexdirection(row);
-    h1 {
-      text-transform: uppercase;
-      font-size: 2em;
-    }
-    img {
-      width: 4vw;
-      height: 7vh;
-      margin: 2em;
-    }
-  }  
-  form .box {
-    width: 20vw;    
-  }
-  form i {
-    padding-right: 0.6em;
-  }
-  .login a, .signup a {
-    text-decoration: none;
-    font-size: 1.5em;
-    padding-left: 1em;
-  }
-}
-/* Side Bar */
-.sideBar {
-  display: none;
-}
-.sideBar ul li{
-  list-style: none;
+  background-color: $secondary-color;
+  padding-bottom: 0.5rem;
+
   a {
+    color: $font-color;
     text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .page-name {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .text-with-flags {
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .text-with-flags {
+      text-align: left !important;
+    }
+  }
+
+  .country-flag {
+    width: 1.5rem;
+    height: auto;
+    margin-right: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .country-flag:last-of-type {
+    margin-left: 0.5rem;
+  }
+
+  .menu-button {
+    margin-left: 2.5rem;
+  }
+
+  form {
+    i {
+      margin-left: 1rem;
+    }
+    .box {
+      margin-left: 1.5rem;
+      width: 100%;
+      margin-top: 0.25rem;
+    }
   }
 }
 /* Color control */
-.fas {
+.fas,
+.far {
   color: $accent2;
 }
-a {
-  color: $font-color;
-}
-
-
