@@ -1,3 +1,70 @@
+@import "../../colors";
+
 img {
   width: 100%;
+  height: auto;
+}
+
+.section-title {
+  background-color: $secondary-color;
+}
+
+.explore-text {
+  font-size: 1.5rem;
+}
+.sample-image-box {
+  .sample-image {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .fas {
+      color: teal;
+    }
+    img {
+      height: 15rem;
+      width: auto;
+    }
+  }
+  .stats {
+    span {
+      margin-left: 1rem;
+    }
+    text-align: center;
+    color: $font-color;
+  }
+}
+
+.image-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.section-art {
+  background-image: url("/assets/images/sample-image.jpg");
+}
+
+.section-hockey {
+  background-image: url("/assets/images/hockey-section.jpg");
+}
+
+.section-nature {
+  background-image: url("/assets/images/nature-section.jpg");
+}
+
+.section-cars {
+  background-image: url("/assets/images/cars-section.jpg");
+  background-position: bottom;
 }
