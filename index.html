@@ -22,7 +22,56 @@
   </head>
   <body>
     <header>
-      <p class="text-center">header</p>
+      <div class="container-fluid">
+        <div class="row pt-1">
+          <div class="col-2 col-md-2 col-xl-1">
+            <i class="fas fa-bars fa-2x menu-button"></i>
+          </div>
+          <div class="col-10 col-md-10 col-xl-5 text-with-flags">
+            <img
+              src="assets/images/czech.JPG"
+              alt="czech"
+              class="country-flag"
+            /><span class="page-name">Photo Gallery</span
+            ><img
+              src="assets/images/japan.JPG"
+              alt="japan"
+              class="country-flag"
+            />
+          </div>
+  
+          <div class="col-6 col-md-6 col-xl-3">
+            <form><div class="container-fluid">
+              <div class="row">
+                <div class="col-2">
+                  <i class="fas fa-search fa-2x"></i>
+                </div>
+                <div class="col-10">
+                  <input
+                    class="box"
+                    type="search"
+                    name="search"
+                    placeholder="Photos, People or Groups"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+  
+          <div class="col-6 col-md-6 col-xl-3 d-flex justify-content-evenly ">
+            <div class="login">
+              <i class="fas fa-sign-in-alt fa-2x"></i>
+              <a href="#">Login</a>
+            </div>
+            <div class="signup">
+              <i class="far fa-user fa-2x"></i>
+              <a href="#">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <div class="container">
       <div class="row">
@@ -32,8 +81,8 @@
       <div class="row mt-3">
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -45,8 +94,8 @@
 
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-2.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-2.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -58,8 +107,8 @@
 
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-3.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-3.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -71,8 +120,8 @@
 
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-4.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-4.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -83,21 +132,8 @@
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-5.jpg" alt="sample image" />
-            </div>
-            <div class="stats font-weight-bold">
-              <span><i class="fas fa-heart"></i>45</span>
-              <span><i class="fas fa-comments"></i>10</span>
-              <span><i class="fas fa-at"></i> Author</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-12 col-md-6 col-xl-3">
-          <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-6.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-5.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -109,8 +145,8 @@
 
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-7.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-6.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -122,8 +158,21 @@
 
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-8.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-7.jpg" alt="sample image" />
+            </div>
+            <div class="stats font-weight-bold">
+              <span><i class="fas fa-heart"></i>45</span>
+              <span><i class="fas fa-comments"></i>10</span>
+              <span><i class="fas fa-at"></i> Author</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-xl-3">
+          <div class="sample-image-box">
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-8.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -168,8 +217,8 @@
       <div class="row mt-3">
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -181,8 +230,8 @@
 
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-2.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-2.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -194,8 +243,8 @@
 
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-3.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-3.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -207,8 +256,8 @@
 
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-4.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-4.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -219,21 +268,8 @@
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-5.jpg" alt="sample image" />
-            </div>
-            <div class="stats font-weight-bold">
-              <span><i class="fas fa-heart"></i>45</span>
-              <span><i class="fas fa-comments"></i>10</span>
-              <span><i class="fas fa-at"></i> Author</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-12 col-md-6 col-xl-3">
-          <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-6.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-5.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -245,8 +281,8 @@
 
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-7.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-6.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -258,8 +294,21 @@
 
         <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div class="sample-image-box">
-            <div class="sample-image">
-              <img src="/assets/images/sample-image-8.jpg" alt="sample image" />
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-7.jpg" alt="sample image" />
+            </div>
+            <div class="stats font-weight-bold">
+              <span><i class="fas fa-heart"></i>45</span>
+              <span><i class="fas fa-comments"></i>10</span>
+              <span><i class="fas fa-at"></i> Author</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-xl-3">
+          <div class="sample-image-box">
+            <div class="sample-image" onclick="openDetail()">
+              <img src="assets/images/sample-image-8.jpg" alt="sample image" />
             </div>
             <div class="stats font-weight-bold">
               <span><i class="fas fa-heart"></i>45</span>
@@ -294,5 +343,10 @@
         <div class="col-md-12 text-center"><p>© Made by Yuki and Ondra</p></div>
       </div>
     </footer>
+    <script>
+      function openDetail(){
+        window.location = 'seePage.html';
+      }
+    </script>
   </body>
 </html>
