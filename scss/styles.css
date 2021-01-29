@@ -42,13 +42,19 @@ header .page-name {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+header .page-name:hover {
+  color: #b3315c;
 }
 
 header .text-with-flags {
   text-align: center;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
   header .text-with-flags {
     text-align: left !important;
   }
@@ -106,13 +112,19 @@ header .page-name {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+header .page-name:hover {
+  color: #b3315c;
 }
 
 header .text-with-flags {
   text-align: center;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
   header .text-with-flags {
     text-align: left !important;
   }
